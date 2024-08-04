@@ -1,9 +1,12 @@
-import type {Metadata} from 'next';
-import {Inter} from 'next/font/google';
+import React from 'react';
+import {Metadata} from 'next';
 import './globals.css';
+import {ThemeProvider} from './context/ThemeContext';
 import Sidebar from './navigation/Sidebar';
-import React from "react";
-import AppolloProvider from "../lib/ApolloProvider";
+import AppolloProvider from '../lib/ApolloProvider';
+import {Inter} from 'next/font/google';
+import 'react-toastify/dist/ReactToastify.css';
+import {ToastContainer} from "react-toastify";
 
 const inter = Inter({subsets: ['latin']});
 
@@ -16,17 +19,18 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
     <html lang="en">
     <body className={inter.className}>
-    <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
-      <Sidebar/>
-      <AppolloProvider>
-        <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
-          {children}
-        </div>
-      </AppolloProvider>
-
-    </div>
+    <ThemeProvider>
+      <ToastContainer/>
+      <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
+        <Sidebar/>
+        <AppolloProvider>
+          <div>
+            {children}
+          </div>
+        </AppolloProvider>
+      </div>
+    </ThemeProvider>
     </body>
     </html>
-  )
-    ;
+  );
 }

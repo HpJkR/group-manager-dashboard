@@ -1,4 +1,4 @@
-import GroupForm from "@/src/app/group-manager/components/GroupForm";
+import GroupForm from "@/src/app/group-maker/components/GroupForm";
 
 export default function GroupManager() {
   return (

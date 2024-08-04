@@ -1,0 +1,15 @@
+query GetAllStudents {
+    getAllStudents {
+        id
+        lastname
+        firstname
+        email
+        telephone
+        avatar
+        class {
+            id
+            name
+            year
+        }
+    }
+}

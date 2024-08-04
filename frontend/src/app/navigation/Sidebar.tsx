@@ -1,10 +1,20 @@
 "use client";
-import {useState} from 'react';
-import {PencilIcon} from "@heroicons/react/24/solid";
-import Link from "next/link";
+
+import React from 'react';
+import Link from 'next/link';
+import ThemeToggle from "@/src/app/components/ThemeToggle";
+import {UserGroupIcon, UserPlusIcon} from "@heroicons/react/24/outline";
+import {ChevronLeftIcon, ChevronRightIcon} from "@heroicons/react/24/solid";
+import {Divider} from "@mui/material";
+import classNames from 'classnames';
+
+const navItems = [
+  {href: "/group-maker", icon: UserGroupIcon, label: "Group"},
+  {href: "/student-manager", icon: UserPlusIcon, label: "Student"},
+];
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -12,28 +22,36 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`bg-gray-800 h-screen transition-width duration-300 ${isOpen ? 'w-24' : 'w-8'}`}
+      className={classNames("bg-[#FE7835] dark:bg-[#FB5B21] h-screen transition-width duration-300 flex flex-col items-center justify-between", {
+        'w-36': isOpen,
+        'w-16': !isOpen,
+      })}
     >
-      <button
-        onClick={toggleSidebar}
-        className="p-2 text-white"
-      >
-        {isOpen ? '<' : '>'}
-      </button>
-      <div className="flex flex-col items-center mt-4 space-y-4">
-        <div className="flex items-center space-x-2">
-          <PencilIcon className="h-6 w-6 text-white"/>
-          {isOpen && <span className="text-white">Home</span>}
+      <div className="flex flex-col items-center w-full">
+        <button
+          onClick={toggleSidebar}
+          className="p-2 text-white w-full hover:bg-gray-700 flex items-center justify-center"
+        >
+          {isOpen ? <ChevronLeftIcon className="h-8 w-8 text-white"/> :
+            <ChevronRightIcon className="h-8 w-8 text-white"/>}
+        </button>
+        <div className={`w-full flex flex-col gap-2 mt-4 ${isOpen ? '' : 'items-center'}`}>
+          {navItems.map((item, index) => (
+            <Link key={index} href={item.href}>
+              <div className="flex items-center gap-2 w-full hover:bg-gray-700 p-3">
+                <item.icon className="h-8 w-8 text-white"/>
+                {isOpen && <span className="text-white">{item.label}</span>}
+              </div>
+            </Link>
+          ))}
+          <Divider variant="middle"/>
         </div>
-        <div className="flex items-center space-x-2">
-          <PencilIcon className="h-6 w-6 text-white"/>
-          {isOpen && <span className="text-white">Profile</span>}
+      </div>
+      <div className="w-full">
+        <Divider variant="middle"/>
+        <div className="flex justify-center py-4">
+          <ThemeToggle/>
         </div>
-        <div className="flex items-center space-x-2">
-          <PencilIcon className="h-6 w-6 text-white"/>
-          {isOpen && <span className="text-white">Settings</span>}
-        </div>
-        <Link href={"/group-manager"}>Group</Link>
       </div>
     </div>
   );

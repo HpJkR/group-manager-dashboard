@@ -1,0 +1,13 @@
+mutation AddStudent($data: NewStudentInput!) {
+    addStudent(data: $data) {
+        id
+        firstname
+        lastname
+        email
+        telephone
+        avatar
+        class {
+            id
+        }
+    }
+}
