@@ -1,0 +1,10 @@
+mutation UpdateStudent($data: UpdateStudentInput!, $updateStudentId: Int!) {
+    updateStudent(data: $data, id: $updateStudentId) {
+        id
+        firstname
+        lastname
+        email
+        telephone
+        avatar
+    }
+}

@@ -1,0 +1,7 @@
+mutation UpdateClass($data: UpdateClassInput!, $updateClassId: Int!) {
+    updateClass(data: $data, id: $updateClassId) {
+        id
+        name
+        year
+    }
+}
