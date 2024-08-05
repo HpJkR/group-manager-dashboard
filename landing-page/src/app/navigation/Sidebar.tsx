@@ -2,15 +2,14 @@
 
 import React from 'react';
 import Link from 'next/link';
-import ThemeToggle from "@/src/app/components/ThemeToggle";
-import {UserGroupIcon, UsersIcon} from "@heroicons/react/24/outline";
+import {HomeIcon, UserGroupIcon} from "@heroicons/react/24/outline";
 import {ChevronLeftIcon, ChevronRightIcon} from "@heroicons/react/24/solid";
 import {Divider} from "@mui/material";
 import classNames from 'classnames';
 
 const navItems = [
+  {href: "/", icon: HomeIcon, label: "Home"},
   {href: "/group-maker", icon: UserGroupIcon, label: "Group"},
-  {href: "/student-manager", icon: UsersIcon, label: "Student"},
 ];
 
 const Sidebar = () => {
@@ -22,7 +21,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={classNames("bg-[#FE7835] dark:bg-[#FB5B21] h-screen transition-width duration-300 flex flex-col items-center justify-between", {
+      className={classNames("bg-[#FE7835] h-screen transition-width duration-300 flex flex-col items-center justify-between", {
         'w-36': isOpen,
         'w-16': !isOpen,
       })}
@@ -45,12 +44,6 @@ const Sidebar = () => {
             </Link>
           ))}
           <Divider variant="middle"/>
-        </div>
-      </div>
-      <div className="w-full">
-        <Divider variant="middle"/>
-        <div className="flex justify-center py-4">
-          <ThemeToggle/>
         </div>
       </div>
     </div>

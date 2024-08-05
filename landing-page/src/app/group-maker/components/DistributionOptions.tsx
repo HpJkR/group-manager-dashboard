@@ -21,7 +21,7 @@ const DistributionOptions: React.FC<DistributionOptionsProps> = ({
         checked={autoDistribute}
         onChange={onAutoDistributeChange}
       />
-      <label>Enable automatic distribution</label>
+      <label className="text-black">Enable automatic distribution</label>
     </div>
     {!autoDistribute && (
       <div className="flex flex-col items-center gap-2">
