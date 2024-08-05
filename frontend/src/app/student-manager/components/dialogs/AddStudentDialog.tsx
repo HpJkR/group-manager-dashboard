@@ -9,7 +9,7 @@ import {toast} from 'react-toastify';
 interface AddStudentDialogProps {
   open: boolean;
   onClose: () => void;
-  onSuccess: () => void; // Nouvelle prop
+  onSuccess: () => void;
 }
 
 const AddStudentDialog: React.FC<AddStudentDialogProps> = ({open, onClose, onSuccess}) => {
@@ -43,7 +43,7 @@ const AddStudentDialog: React.FC<AddStudentDialogProps> = ({open, onClose, onSuc
         },
       });
       toast.success('Student successfully added!');
-      onSuccess(); // Appeler onSuccess pour rafraîchir les données
+      onSuccess();
       onClose();
     } catch (error) {
       console.error('Error adding student:', error);

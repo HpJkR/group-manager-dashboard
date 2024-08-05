@@ -10,7 +10,7 @@ class ClassResolver {
 
   @Query(() => Class, {nullable: true})
   async getClassById(@Arg("id", () => Int) id: number): Promise<Class | null> {
-    return await Class.findOne({where: {id}}); // Correctly use FindOneOptions
+    return await Class.findOne({where: {id}});
   }
 
   @Query(() => [Class])

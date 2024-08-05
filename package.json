@@ -7,7 +7,7 @@
     "dev": "docker compose up --build",
     "prod": "docker compose -f docker-compose.production.yml up --build"
   },
-  "author": "Jeremy Dohin",
+  "author": "Mehdy H",
   "license": "MIT",
   "husky": {
     "hooks": {

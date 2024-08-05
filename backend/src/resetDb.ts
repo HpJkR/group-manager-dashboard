@@ -89,9 +89,9 @@ async function main() {
 
     await clearDB();
 
-    await insertClasses(); // Insert classes first
+    await insertClasses();
 
-    await insertStudents(); // Insert students and associate them with classes
+    await insertStudents();
 
     await db.destroy();
   } catch (error) {

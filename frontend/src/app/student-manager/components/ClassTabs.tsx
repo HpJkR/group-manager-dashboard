@@ -233,7 +233,7 @@ const ClassTabs: React.FC = () => {
       <AddStudentDialog
         open={addDialogOpen}
         onClose={() => setAddDialogOpen(false)}
-        onSuccess={handleAddStudentSuccess} // Passer le callback
+        onSuccess={handleAddStudentSuccess}
       />
       <Button
         variant="contained"
