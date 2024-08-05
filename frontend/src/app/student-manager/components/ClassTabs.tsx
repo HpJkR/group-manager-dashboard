@@ -12,6 +12,7 @@ import StudentActions from './StudentActions';
 import EditStudentDialog from './dialogs/EditStudentDialog';
 import AddStudentDialog from './dialogs/AddStudentDialog';
 import TabPanel from './TabPanel';
+import {UserPlusIcon} from "@heroicons/react/24/outline";
 
 const ClassTabs: React.FC = () => {
   const {data: classData, loading: classLoading, error: classError} = useGetAllClassesQuery();
@@ -239,7 +240,8 @@ const ClassTabs: React.FC = () => {
         variant="contained"
         color="primary"
         onClick={() => setAddDialogOpen(true)}
-        sx={{position: 'fixed', bottom: 16, right: 16}}
+        sx={{position: 'fixed', top: 16, right: 16}}
+        startIcon={<UserPlusIcon width={20} height={20}/>}
       >
         Add Student
       </Button>
