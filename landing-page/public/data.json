@@ -1,0 +1,326 @@
+{
+  "classes": [
+    {
+      "id": 1,
+      "name": "Mathématiques",
+      "year": 2024
+    },
+    {
+      "id": 2,
+      "name": "Physique",
+      "year": 2024
+    },
+    {
+      "id": 3,
+      "name": "Chimie",
+      "year": 2024
+    },
+    {
+      "id": 4,
+      "name": "Biologie",
+      "year": 2024
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "firstname": "Alice",
+      "lastname": "Dupont",
+      "classId": 1
+    },
+    {
+      "id": 2,
+      "firstname": "Bob",
+      "lastname": "Martin",
+      "classId": 1
+    },
+    {
+      "id": 3,
+      "firstname": "Charlie",
+      "lastname": "Durand",
+      "classId": 1
+    },
+    {
+      "id": 4,
+      "firstname": "David",
+      "lastname": "Leroy",
+      "classId": 1
+    },
+    {
+      "id": 5,
+      "firstname": "Eva",
+      "lastname": "Leclerc",
+      "classId": 1
+    },
+    {
+      "id": 6,
+      "firstname": "François",
+      "lastname": "Bernard",
+      "classId": 1
+    },
+    {
+      "id": 7,
+      "firstname": "Gina",
+      "lastname": "Moreau",
+      "classId": 1
+    },
+    {
+      "id": 8,
+      "firstname": "Hugo",
+      "lastname": "Garcia",
+      "classId": 1
+    },
+    {
+      "id": 9,
+      "firstname": "Isabelle",
+      "lastname": "Dubois",
+      "classId": 1
+    },
+    {
+      "id": 10,
+      "firstname": "Jules",
+      "lastname": "Henry",
+      "classId": 1
+    },
+    {
+      "id": 11,
+      "firstname": "Klaus",
+      "lastname": "Lemoine",
+      "classId": 2
+    },
+    {
+      "id": 12,
+      "firstname": "Laura",
+      "lastname": "Deschamps",
+      "classId": 2
+    },
+    {
+      "id": 13,
+      "firstname": "Marc",
+      "lastname": "Bertin",
+      "classId": 2
+    },
+    {
+      "id": 14,
+      "firstname": "Nina",
+      "lastname": "Nicolas",
+      "classId": 2
+    },
+    {
+      "id": 15,
+      "firstname": "Oscar",
+      "lastname": "Pichon",
+      "classId": 2
+    },
+    {
+      "id": 16,
+      "firstname": "Paul",
+      "lastname": "Roy",
+      "classId": 2
+    },
+    {
+      "id": 17,
+      "firstname": "Quentin",
+      "lastname": "Vidal",
+      "classId": 2
+    },
+    {
+      "id": 18,
+      "firstname": "Rachel",
+      "lastname": "Gautier",
+      "classId": 2
+    },
+    {
+      "id": 19,
+      "firstname": "Sophie",
+      "lastname": "Gérard",
+      "classId": 2
+    },
+    {
+      "id": 20,
+      "firstname": "Thomas",
+      "lastname": "Lemoine",
+      "classId": 2
+    },
+    {
+      "id": 21,
+      "firstname": "Ursula",
+      "lastname": "Martin",
+      "classId": 3
+    },
+    {
+      "id": 22,
+      "firstname": "Victor",
+      "lastname": "Charpentier",
+      "classId": 3
+    },
+    {
+      "id": 23,
+      "firstname": "Wendy",
+      "lastname": "Renaud",
+      "classId": 3
+    },
+    {
+      "id": 24,
+      "firstname": "Xavier",
+      "lastname": "Bouvier",
+      "classId": 3
+    },
+    {
+      "id": 25,
+      "firstname": "Yvonne",
+      "lastname": "Poirier",
+      "classId": 3
+    },
+    {
+      "id": 26,
+      "firstname": "Zacharie",
+      "lastname": "Lambert",
+      "classId": 3
+    },
+    {
+      "id": 27,
+      "firstname": "Alice",
+      "lastname": "Vernet",
+      "classId": 3
+    },
+    {
+      "id": 28,
+      "firstname": "Benjamin",
+      "lastname": "Joly",
+      "classId": 3
+    },
+    {
+      "id": 29,
+      "firstname": "Clara",
+      "lastname": "Lemoine",
+      "classId": 3
+    },
+    {
+      "id": 30,
+      "firstname": "Daniel",
+      "lastname": "Giraud",
+      "classId": 3
+    },
+    {
+      "id": 31,
+      "firstname": "Emma",
+      "lastname": "Collet",
+      "classId": 4
+    },
+    {
+      "id": 32,
+      "firstname": "Fabien",
+      "lastname": "Gosse",
+      "classId": 4
+    },
+    {
+      "id": 33,
+      "firstname": "Géraldine",
+      "lastname": "Gros",
+      "classId": 4
+    },
+    {
+      "id": 34,
+      "firstname": "Henri",
+      "lastname": "Caron",
+      "classId": 4
+    },
+    {
+      "id": 35,
+      "firstname": "Inès",
+      "lastname": "Martinez",
+      "classId": 4
+    },
+    {
+      "id": 36,
+      "firstname": "Jérôme",
+      "lastname": "Leclerc",
+      "classId": 4
+    },
+    {
+      "id": 37,
+      "firstname": "Karim",
+      "lastname": "Lambert",
+      "classId": 4
+    },
+    {
+      "id": 38,
+      "firstname": "Léa",
+      "lastname": "Leroux",
+      "classId": 4
+    },
+    {
+      "id": 39,
+      "firstname": "Marc",
+      "lastname": "Joubert",
+      "classId": 4
+    },
+    {
+      "id": 40,
+      "firstname": "Nadine",
+      "lastname": "Moulin",
+      "classId": 4
+    },
+    {
+      "id": 41,
+      "firstname": "Olivier",
+      "lastname": "Dumas",
+      "classId": 1
+    },
+    {
+      "id": 42,
+      "firstname": "Pénélope",
+      "lastname": "Prévost",
+      "classId": 1
+    },
+    {
+      "id": 43,
+      "firstname": "Quentin",
+      "lastname": "Couturier",
+      "classId": 2
+    },
+    {
+      "id": 44,
+      "firstname": "Romain",
+      "lastname": "Roussel",
+      "classId": 2
+    },
+    {
+      "id": 45,
+      "firstname": "Sabrina",
+      "lastname": "Rivet",
+      "classId": 3
+    },
+    {
+      "id": 46,
+      "firstname": "Théo",
+      "lastname": "Delmas",
+      "classId": 3
+    },
+    {
+      "id": 47,
+      "firstname": "Ursula",
+      "lastname": "Charpentier",
+      "classId": 4
+    },
+    {
+      "id": 48,
+      "firstname": "Véronique",
+      "lastname": "Baptiste",
+      "classId": 4
+    },
+    {
+      "id": 49,
+      "firstname": "William",
+      "lastname": "Blanc",
+      "classId": 1
+    },
+    {
+      "id": 50,
+      "firstname": "Xena",
+      "lastname": "Gosselin",
+      "classId": 2
+    }
+  ]
+}
