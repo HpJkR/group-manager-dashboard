@@ -1,0 +1,7 @@
+mutation AddClass($data: NewClassInput!) {
+    addClass(data: $data) {
+        id
+        name
+        year
+    }
+}
