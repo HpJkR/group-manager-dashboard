@@ -92,7 +92,7 @@ const GroupForm: React.FC = () => {
 
   return (
     <div className="flex flex-col gap-8 p-6">
-      <h1 className="text-xl font-bold mb-4">Form groups</h1>
+      <h1 className="text-xl text-black font-bold mb-4">Form groups</h1>
       <ClassSelector options={classOptions} onChange={handleClassesChange}/>
       <StudentSelector
         options={filteredStudentOptions}
